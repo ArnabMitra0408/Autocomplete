@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Autocomplete Application</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 class="top">Autocomplete Application</h1>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="container top">
+            <div class="wrapper">
+                <form class="names">
+                <label id="person">
+                <input type="text" name="person" class="form-control" autocomplete="off" placeholder="Name" id="text-box">
+                </label>
+                <input type="submit">
+
+            </form>
+            </div>
+            <ul id="list" class="list-group">
+            </ul>
+
+        </div>
+    </main>
+
+    <script src="./trie.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
